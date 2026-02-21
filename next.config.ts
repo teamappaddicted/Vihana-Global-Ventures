@@ -42,40 +42,16 @@ const nextConfig: NextConfig = {
   // Optimized production builds
   compress: true,
 
-  // WebGL and Three.js compatibility
-  webpack: (config, { isServer }) => {
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      fs: false,
-      path: false,
-      crypto: false,
-    };
-    
-    // Handle Three.js and WebGL modules
-    config.module.rules.push({
-      test: /three[\\/]examples[\\/]jsm/,
-      sideEffects: true,
-    });
-    
-    return config;
-  },
-
-  // Output mode for Vercel
-  output: 'standalone',
+  // Turbopack configuration for Next.js 16
+  turbopack: {},
 
   // Environment variables
   env: {
     NEXT_PUBLIC_APP_NAME: "Vihana Global Ventures",
   },
 
-  // Vercel specific settings
-  outputFileTracing: true,
-
   // Strict mode for better error detection
   reactStrictMode: true,
-
-  // SWC minification (faster builds)
-  swcMinify: true,
 
   // Experimental features for better performance
   experimental: {

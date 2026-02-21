@@ -13,8 +13,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "types": ["node"],
-    "lib": ["dom", "dom.iterable", "esnext"]
     "plugins": [
       {
         "name": "next"
