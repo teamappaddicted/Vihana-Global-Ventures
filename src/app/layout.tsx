@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'Vihana Global Ventures' }],
   creator: 'Vihana Global Ventures',
   manifest: '/manifest.json',
+   icons: {
+    icon: '/favicon.ico',      // <-- Add this line
+    apple: '/favicon.ico',     // optional, for iOS devices
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -42,6 +46,7 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://vihanaglobal.com" />
         <link rel="manifest" href="/manifest.json" />
+         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#214156" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>
