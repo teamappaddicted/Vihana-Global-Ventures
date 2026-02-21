@@ -5,10 +5,7 @@
   "framework": "nextjs",
   "regions": ["iad1"],
   "env": {
-    "NEXT_PUBLIC_APP_NAME": {
-      "description": "Application name",
-      "value": "Vihana Global Ventures"
-    }
+   "NEXT_PUBLIC_APP_NAME": "Vihana Global Ventures"
   },
   "functions": {
     "src/app/api/**": {
