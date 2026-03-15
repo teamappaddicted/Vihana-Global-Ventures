@@ -125,13 +125,16 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                About Vihana Global Ventures
+                Global Trade Consultants & Import-Export Business Facilitators
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                With over 15 years of expertise in international trade, Vihana Global Ventures has established itself as a trusted partner for businesses seeking to expand globally.
+                Vihana Global Ventures, based in Ahmedabad, is an international trade consulting and business facilitation company that helps global manufacturers expand their business presence in the Indian market.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                We specialize in import-export consulting, international sourcing, strategic partnerships, and market entry support for companies looking to establish and grow their operations in India.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                We specialize in comprehensive import-export trading solutions and expert consulting services, helping companies navigate complex international markets with confidence and ease.
+                Vihana Global Ventures is backed by the experience and legacy of AA International, pioneers in international trade consulting since 1998 and an ISO 9001 certified organization based in Chennai.
               </p>
               <Link
                 href="/about"
