@@ -33,13 +33,16 @@ export default function AboutPage() {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Founded in 2009, Vihana Global Ventures emerged from a vision to simplify international trade and make it accessible to businesses of all sizes. What started as a boutique trading firm has evolved into a comprehensive global trading and consulting powerhouse.
+              For over two decades, our group has worked closely with international manufacturers across China, Europe, and other global markets, helping them connect with some of India's largest industrial organizations.
             </p>
             <p className="text-lg text-gray-600 mb-4">
-              Our founders, with decades of combined experience in international commerce, recognized the challenges businesses face when entering global markets. They created Vihana Global Ventures to be the trusted bridge between buyers and sellers across continents.
+              Our experience includes facilitating the supply of over 10 lakh metric tons of industrial products to major companies in India.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              A significant milestone in our journey was in 1998, when our group played a key role in facilitating the supply of seamless pipes from China to BHEL, making us one of the earliest companies involved in this international trade segment.
             </p>
             <p className="text-lg text-gray-600">
-              Today, we serve hundreds of satisfied clients across 85+ countries, handling thousands of successful trades annually. Our commitment to excellence, integrity, and innovation remains unwavering.
+              Our strong relationships with buyers have been built over more than 30 years, based on trust, quality, and long-term partnerships.
             </p>
           </motion.div>
         </div>
