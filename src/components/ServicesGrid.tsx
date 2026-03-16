@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Truck, Package, Globe, FileText } from 'lucide-react';
+import { Truck, Package, Globe, FileText, MapPin, ClipboardCheck } from 'lucide-react';
 
 export default function ServicesGrid() {
   const services = [
