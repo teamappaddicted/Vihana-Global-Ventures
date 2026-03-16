@@ -33,16 +33,16 @@ export default function AboutPage() {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
             <p className="text-lg text-gray-600 mb-4">
-              For over two decades, our group has worked closely with international manufacturers across China, Europe, and other global markets, helping them connect with some of India's largest industrial organizations.
+              Vihana Global Ventures is an international trade consulting and business facilitation company based in Ahmedabad, India, focused on enabling seamless global trade between international manufacturers and the Indian market.
             </p>
             <p className="text-lg text-gray-600 mb-4">
-              Our experience includes facilitating the supply of over 10 lakh metric tons of industrial products to major companies in India.
+              We assist global companies in expanding their presence in India by providing import-export consulting, international sourcing solutions, strategic partnerships, and market entry support.
             </p>
             <p className="text-lg text-gray-600 mb-4">
-              A significant milestone in our journey was in 1998, when our group played a key role in facilitating the supply of seamless pipes from China to BHEL, making us one of the earliest companies involved in this international trade segment.
+              Our objective is to simplify international trade and create long-term business opportunities for both global suppliers and Indian industrial buyers.
             </p>
             <p className="text-lg text-gray-600">
-              Our strong relationships with buyers have been built over more than 30 years, based on trust, quality, and long-term partnerships.
+              Vihana Global Ventures operates with the experience and guidance of A.A. International Group, an ISO 9001 certified international business consulting firm based in Chennai, which has been actively involved in international trade and industrial sourcing since 1998.
             </p>
           </motion.div>
         </div>
@@ -60,9 +60,9 @@ export default function AboutPage() {
               className="p-8 bg-white rounded-2xl border border-gray-100 hover:border-[#214156] transition-all"
             >
               <Users className="w-12 h-12 text-[#214156] mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                To empower businesses with comprehensive trading solutions, expert consulting, and unparalleled market intelligence, making global trade accessible and profitable for all our partners.
+                To support businesses in expanding globally by facilitating imports into India, promoting exports from India, and building reliable international trade networks.
               </p>
             </motion.div>
 
@@ -75,9 +75,9 @@ export default function AboutPage() {
               className="p-8 bg-white rounded-2xl border border-gray-100 hover:border-[#214156] transition-all"
             >
               <Globe className="w-12 h-12 text-cyan-500 mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Vision</h3>
               <p className="text-gray-600 leading-relaxed">
-                To be the most trusted and innovative global trading partner, recognized for excellence in connecting businesses across borders and enabling seamless international commerce.
+                To be a trusted bridge in global trade, connecting international markets with Indian industries and enabling sustainable import and export partnerships.
               </p>
             </motion.div>
 
@@ -96,6 +96,7 @@ export default function AboutPage() {
                 <li>✓ Excellence in service</li>
                 <li>✓ Innovation & growth</li>
                 <li>✓ Transparency always</li>
+                <li>✓ Long-Term Partnerships</li>
               </ul>
             </motion.div>
           </div>
