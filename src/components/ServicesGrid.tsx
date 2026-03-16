@@ -7,27 +7,45 @@ export default function ServicesGrid() {
   const services = [
     {
       icon: Truck,
-      title: 'Import & Export Trading',
-      description: 'End-to-end trading solutions with global sourcing, quality assurance, and logistics coordination.',
-      features: ['Global Sourcing', 'Quality Control', 'Logistics Management', 'Customs Handling'],
-    },
-    {
-      icon: FileText,
-      title: 'Import-Export Consulting',
-      description: 'Expert indenting agent services for buyer-supplier matchmaking and trade compliance.',
-      features: ['Buyer-Supplier Matching', 'Documentation', 'Compliance Guidance', 'Trade Advisory'],
-    },
-    {
-      icon: Package,
-      title: 'Cargo Management',
-      description: 'Professional handling of cargo shipments with real-time tracking and risk management.',
-      features: ['Real-time Tracking', 'Insurance Services', 'Risk Management', 'Custom Solutions'],
+      title: 'Import Consulting',
+      description:
+        'We assist Indian businesses in sourcing reliable products from international markets by connecting them with trusted global manufacturers and suppliers.',
+      features: ['Supplier Identification', 'Quality Vetting', 'Negotiation Support', 'Cost Optimization'],
     },
     {
       icon: Globe,
-      title: 'Market Intelligence',
-      description: 'In-depth trade market analysis and trend forecasting for strategic decision making.',
-      features: ['Market Research', 'Trend Analysis', 'Price Forecasting', 'Strategic Insights'],
+      title: 'Export Support',
+      description:
+        'We help Indian companies expand globally by facilitating export opportunities and connecting them with international buyers and business partners.',
+      features: ['Buyer Outreach', 'Export Documentation', 'Regulatory Guidance', 'Market Matching'],
+    },
+    {
+      icon: Globe,
+      title: 'International Sourcing',
+      description:
+        'Through our global network, we identify and connect businesses with reliable suppliers across China, Europe, and other international markets.',
+      features: ['Global Supplier Network', 'Quality Assurance', 'Logistics Coordination', 'Supplier Audits'],
+    },
+    {
+      icon: MapPin,
+      title: 'Market Entry Strategy',
+      description:
+        'We support international manufacturers who want to enter the Indian market by providing strategic guidance, industry connections, and business development support.',
+      features: ['Market Research', 'Partner Identification', 'Entry Planning', 'Local Networking'],
+    },
+    {
+      icon: FileText,
+      title: 'Business Representation',
+      description:
+        'We represent global manufacturers as consultants or commission agents, helping them establish relationships with leading companies in India.',
+      features: ['Agency Support', 'Sales Enablement', 'Local Liaison', 'Contract Facilitation'],
+    },
+    {
+      icon: ClipboardCheck,
+      title: 'Global Trade Facilitation',
+      description:
+        'We simplify international trade processes by building partnerships between buyers and suppliers, ensuring smooth and efficient business collaboration.',
+      features: ['Process Coordination', 'Compliance Oversight', 'Stakeholder Alignment', 'Risk Management'],
     },
   ];
 

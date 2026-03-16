@@ -193,9 +193,9 @@ export default function Home() {
               viewport={{ once: true }}
               className="p-8 bg-gradient-to-br from-[#214156]/5 to-cyan-50 rounded-2xl border border-[#214156]/10 hover:border-[#214156]/30 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-[#214156] mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-[#214156] mb-4">Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                To be the most trusted and innovative global trading partner, recognized for excellence in connecting businesses across borders and enabling seamless international commerce.
+                To be a trusted bridge in global trade, connecting international markets with Indian industries and enabling sustainable import and export partnerships.
               </p>
             </motion.div>
 
@@ -207,9 +207,9 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="p-8 bg-gradient-to-br from-cyan-50 to-[#214156]/5 rounded-2xl border border-cyan-100 hover:border-cyan-300 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-[#214156] mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-[#214156] mb-4">Mission</h3>
               <p className="text-gray-700 leading-relaxed">
-                To empower businesses with comprehensive trading solutions, expert consulting, and unparalleled market intelligence, making global trade accessible and profitable for all our partners.
+                To support businesses in expanding globally by facilitating imports into India, promoting exports from India, and building reliable international trade networks.
               </p>
             </motion.div>
           </div>

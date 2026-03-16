@@ -21,141 +21,52 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Main Services */}
+      {/* Services Overview */}
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Import & Export Trading */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+            className="text-center mb-16"
           >
-            <div>
-              <div className="flex items-center gap-4 mb-4">
-                <Truck className="w-12 h-12 text-[#214156]" />
-                <h2 className="text-4xl font-bold text-gray-900">Import & Export Trading</h2>
-              </div>
-              <p className="text-lg text-gray-600 mb-6">
-                End-to-end trading solutions designed to streamline your international commerce operations.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  'Global Sourcing & Supplier Network',
-                  'Quality Assurance & Inspection',
-                  'Customs Documentation & Clearance',
-                  'Logistics Coordination',
-                  'Price Negotiation & Contract Management',
-                  'Risk Assessment & Mitigation',
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-cyan-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-gradient-to-br from-[#214156]/10 to-cyan-50 p-8 rounded-2xl border border-[#214156]/20"
-            >
-              <div className="text-6xl mb-4">📦</div>
-              <h3 className="text-2xl font-bold text-[#214156] mb-4">Why Choose Us?</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li>✓ 15+ years of trading expertise</li>
-                <li>✓ Network of 500+ verified suppliers</li>
-                <li>✓ Competitive pricing guarantee</li>
-                <li>✓ Real-time shipment tracking</li>
-                <li>✓ Dedicated account management</li>
-              </ul>
-            </motion.div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We deliver a full suite of international trade services that connect global suppliers with Indian buyers, and help Indian exporters grow worldwide.
+            </p>
           </motion.div>
 
-          {/* Import-Export Consulting */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-gradient-to-br from-cyan-50 to-[#214156]/10 p-8 rounded-2xl border border-cyan-200 order-2 lg:order-1"
-            >
-              <div className="text-6xl mb-4">📋</div>
-              <h3 className="text-2xl font-bold text-[#214156] mb-4">Consulting Services</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li>✓ Trade compliance expertise</li>
-                <li>✓ Market analysis & research</li>
-                <li>✓ Buyer-supplier matching</li>
-                <li>✓ Documentation guidance</li>
-                <li>✓ Strategic advisory</li>
-              </ul>
-            </motion.div>
-            <div className="order-1 lg:order-2">
-              <div className="flex items-center gap-4 mb-4">
-                <FileText className="w-12 h-12 text-cyan-500" />
-                <h2 className="text-4xl font-bold text-gray-900">Import-Export Consulting</h2>
-              </div>
-              <p className="text-lg text-gray-600 mb-6">
-                Expert indenting agent services with comprehensive trade solutions.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  'Buyer-Supplier Matchmaking',
-                  'Trade Compliance & Regulations',
-                  'Documentation & Paperwork',
-                  'Market Entry Strategy',
-                  'Price & Quality Benchmarking',
-                  'Dispute Resolution Support',
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-cyan-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Additional Services Grid */}
-      <section className="py-20 md:py-32 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">Specialized Services</h2>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Globe,
-                title: 'Market Intelligence',
-                desc: 'In-depth market research, trend analysis, and price forecasting',
+                icon: Truck,
+                title: 'Import Consulting',
+                desc: 'We assist Indian businesses in sourcing reliable products from international markets by connecting them with trusted global manufacturers and suppliers.',
               },
               {
-                icon: BarChart3,
-                title: 'Trade Analytics',
-                desc: 'Data-driven insights for strategic decision-making',
+                icon: Globe,
+                title: 'Export Support',
+                desc: 'We help Indian companies expand globally by facilitating export opportunities and connecting them with international buyers and business partners.',
+              },
+              {
+                icon: Globe,
+                title: 'International Sourcing',
+                desc: 'Through our global network, we identify and connect businesses with reliable suppliers across China, Europe, and other international markets.',
               },
               {
                 icon: MapPin,
-                title: 'Logistics Coordination',
-                desc: 'End-to-end cargo management with tracking',
-              },
-              {
-                icon: ClipboardCheck,
-                title: 'Compliance Management',
-                desc: 'Full regulatory compliance and documentation',
-              },
-              {
-                icon: Truck,
-                title: 'Cargo Clearance',
-                desc: 'Expert customs clearance and port coordination',
+                title: 'Market Entry Strategy',
+                desc: 'We support international manufacturers who want to enter the Indian market by providing strategic guidance, industry connections, and business development support.',
               },
               {
                 icon: FileText,
-                title: 'Trade Advisory',
-                desc: 'Strategic consulting for market expansion',
+                title: 'Business Representation',
+                desc: 'We represent global manufacturers as consultants or commission agents, helping them establish relationships with leading companies in India.',
+              },
+              {
+                icon: ClipboardCheck,
+                title: 'Global Trade Facilitation',
+                desc: 'We simplify international trade processes by building partnerships between buyers and suppliers, ensuring smooth and efficient business collaboration.',
               },
             ].map((service, idx) => (
               <motion.div
