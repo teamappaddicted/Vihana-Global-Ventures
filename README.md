@@ -128,7 +128,7 @@ docker run -p 3000:3000 vihana
 
 **Vihana Global Ventures**
 - Email: info@vihanaglobal.com
-- Phone: +1 (555) 000-0000
+- Phone: +91 9904461301
 
 ## 📝 License
 

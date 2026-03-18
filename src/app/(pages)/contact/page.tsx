@@ -65,7 +65,7 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6 text-[#214156] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Address</h3>
-                  <p className="text-gray-600">Global Headquarters<br/>123 Trade Avenue<br/>International Commerce Hub<br/>NY 10001, USA</p>
+                  <p className="text-gray-600">O-402 SUN ATMOSPHERE NR O7 CLUB SHELA<br/>SANAND, AHMEDABAD, GUJARAT - 380058<br/>India</p>
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <Phone className="w-6 h-6 text-[#214156] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 000-0000<br/>+1 (555) 000-0001</p>
+                  <p className="text-gray-600">+91 9904461301</p>
                 </div>
               </div>
 
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <motion.a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/919904461301"
                 whileHover={{ scale: 1.05 }}
                 className="inline-flex items-center gap-3 px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors"
               >
@@ -163,7 +163,7 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#214156] transition-colors"
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+91 9904461301"
                     />
                   </div>
                   <div>

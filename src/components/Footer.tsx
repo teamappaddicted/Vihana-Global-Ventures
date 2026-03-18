@@ -68,11 +68,11 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-gray-300">
                   <MapPin size={18} className="text-cyan-400" />
-                  <span>Global Headquarters</span>
+                  <span>O-402 SUN ATMOSPHERE NR O7 CLUB SHELA, SANAND, AHMEDABAD, GUJARAT - 380058</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Phone size={18} className="text-cyan-400" />
-                  <span>+1 (555) 000-0000</span>
+                  <span>+91 9904461301</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Mail size={18} className="text-cyan-400" />
@@ -130,7 +130,7 @@ export default function Footer() {
                 </motion.a>
               ))}
               <motion.a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/919904461301"
                 aria-label="WhatsApp"
                 whileHover={{ scale: 1.2, y: -5 }}
                 className="text-gray-400 hover:text-green-400 transition-colors duration-200"

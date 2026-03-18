@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
             <p>
               If you have questions about this Privacy Policy, please contact us at:<br/>
               Email: privacy@vihanaglobal.com<br/>
-              Phone: +1 (555) 000-0000
+              Phone: +91 9904461301
             </p>
           </section>
 

@@ -101,7 +101,7 @@ export default function DisclaimerPage() {
             <p>
               For questions or concerns regarding this disclaimer, please contact us at:<br/>
               Email: legal@vihanaglobal.com<br/>
-              Phone: +1 (555) 000-0000
+              Phone: +91 9904461301
             </p>
           </section>
 
