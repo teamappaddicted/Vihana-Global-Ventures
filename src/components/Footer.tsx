@@ -76,7 +76,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Mail size={18} className="text-cyan-400" />
-                  <span>info@vihanaglobal.com</span>
+                  <span>info@vihanaglobalventures.com</span>
                 </div>
               </div>
             </motion.div>
