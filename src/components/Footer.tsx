@@ -14,16 +14,13 @@ export default function Footer() {
         { name: 'Home', href: '/' },
         { name: 'About Us', href: '/about' },
         { name: 'Services', href: '/services' },
-        { name: 'Industries', href: '/industries' },
+        { name: 'Contact', href: '/contact' },
       ],
     },
     {
       title: 'Resources',
       links: [
-        { name: 'Blog', href: '/blog' },
-        { name: 'FAQ', href: '/faq' },
         { name: 'Global Presence', href: '/global-presence' },
-        { name: 'Partners', href: '/partners' },
       ],
     },
     {

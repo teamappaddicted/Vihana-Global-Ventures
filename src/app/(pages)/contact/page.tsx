@@ -83,7 +83,7 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6 text-[#214156] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600">info@vihanaglobalventures.com<br/>support@vihanaglobalventures.com</p>
+                  <p className="text-gray-600">info@vihanaglobalventures.com</p>
                 </div>
               </div>
 

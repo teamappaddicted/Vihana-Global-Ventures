@@ -13,12 +13,6 @@ export default function Header() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Industries', href: '/industries' },
-    { name: 'Founder', href: '/founder' },
-    { name: 'Partners', href: '/partners' },
-    { name: 'Global Map', href: '/global-presence' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact' },
   ];
 

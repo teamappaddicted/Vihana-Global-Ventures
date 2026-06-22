@@ -121,65 +121,9 @@ Details on:
   - Strategic insights
 
 ### **Industries We Serve (`/industries`)**
-6 Industry Cards:
-1. Agriculture
-   - Grains & cereals
-   - Fresh produce
-   - Spices
-   - Organic products
-
-2. Textiles & Apparel
-   - Raw fabrics
-   - Finished garments
-   - Home textiles
-   - Technical fabrics
-
-3. Chemicals & Pharma
-   - Industrial chemicals
-   - Pharmaceuticals
-   - Cosmetics
-   - Safety products
-
-4. Machinery & Equipment
-   - Heavy machinery
-   - Industrial equipment
-   - Spare parts
-   - Tech devices
-
-5. FMCG Products
-   - Beverages
-   - Snacks
-   - Personal care
-   - Household items
-
-6. Industrial Goods
-   - Steel & metals
-   - Plastics
-   - Electronics
-   - Energy products
-
-### **Founder's Message (`/founder`)**
-Content:
-- Founder profile with placeholder image
-- Personal message from founder
-- Leadership philosophy (8 principles):
-  1. Client-First Mindset
-  2. Innovation
-  3. Transparency
-  4. Excellence
-  5. Team Empowerment
-  6. Sustainable Growth
-  7. Global Perspective
-  8. Continuous Learning
-
-- Inspirational quote
-
-### **Trusted Partners (`/partners`)**
-Sections:
-- Partner logos (12 placeholders)
-- Client testimonials (6 reviews with 5-star ratings)
-- Case studies (4 detailed success stories)
-
+### Removed Pages
+The following pages have been removed from the public site as requested: `/industries`, `/founder`, `/partners`, `/blog`, and `/faq`.
+These sections were consolidated to simplify navigation and focus the site on core pages: Home, About, Services, and Contact.
 ### **Global Presence (`/global-presence`)**
 Content:
 - 3D interactive globe

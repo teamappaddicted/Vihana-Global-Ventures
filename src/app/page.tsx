@@ -5,9 +5,6 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, Play } from 'lucide-react';
 import ServicesGrid from '@/components/ServicesGrid';
-import StatsSection from '@/components/StatsSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import MarqueeBanner from '@/components/MarqueeBanner';
 import AnimatedGlobe3D from '@/components/AnimatedGlobe3D';
 import ScrollingShip2D from '@/components/ScrollingShip2D';
 
@@ -160,61 +157,6 @@ export default function Home() {
 
       {/* Services Section */}
       <ServicesGrid />
-
-      {/* Stats Section */}
-      <StatsSection />
-
-      {/* Testimonials */}
-      <TestimonialsSection />
-
-      {/* Marquee Banner */}
-      <MarqueeBanner />
-
-      {/* Vision & Mission Preview */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Vision & Mission
-            </h2>
-            <p className="text-xl text-gray-600">Driving global commerce forward</p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Vision */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="p-8 bg-gradient-to-br from-[#214156]/5 to-cyan-50 rounded-2xl border border-[#214156]/10 hover:border-[#214156]/30 transition-all duration-300"
-            >
-              <h3 className="text-2xl font-bold text-[#214156] mb-4">Vision</h3>
-              <p className="text-gray-700 leading-relaxed">
-                To be a trusted bridge in global trade, connecting international markets with Indian industries and enabling sustainable import and export partnerships.
-              </p>
-            </motion.div>
-
-            {/* Mission */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="p-8 bg-gradient-to-br from-cyan-50 to-[#214156]/5 rounded-2xl border border-cyan-100 hover:border-cyan-300 transition-all duration-300"
-            >
-              <h3 className="text-2xl font-bold text-[#214156] mb-4">Mission</h3>
-              <p className="text-gray-700 leading-relaxed">
-                To support businesses in expanding globally by facilitating imports into India, promoting exports from India, and building reliable international trade networks.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-[#214156] to-[#2d5a73] relative overflow-hidden">
