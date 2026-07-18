@@ -14,7 +14,13 @@ export async function POST(request: Request) {
       submittedAt: new Date().toISOString(),
     };
 
-    const response = await fetch(process.env.GOOGLE_APPS_SCRIPT_URL as string, {
+    const endpoint = process.env.GOOGLE_APPS_SCRIPT_URL;
+
+    if (!endpoint) {
+      throw new Error('GOOGLE_APPS_SCRIPT_URL is not configured.');
+    }
+
+    const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,14 +29,22 @@ export async function POST(request: Request) {
     });
 
     if (!response.ok) {
-      throw new Error('Failed to submit to Google Apps Script.');
+      const responseText = await response.text();
+      throw new Error(`Google Apps Script returned ${response.status} ${response.statusText}: ${responseText}`);
     }
 
     return NextResponse.json({ success: true, message: 'Contact form submitted successfully.' });
   } catch (error) {
     console.error('Contact API error:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
+
     return NextResponse.json(
-      { success: false, error: 'Unable to send your message right now. Please try again later.' },
+      {
+        success: false,
+        error: message.includes('GOOGLE_APPS_SCRIPT_URL')
+          ? 'The Google Apps Script endpoint is not configured yet.'
+          : 'The contact form could not reach Google Apps Script. Please verify the deployment URL and permissions.',
+      },
       { status: 500 }
     );
   }
