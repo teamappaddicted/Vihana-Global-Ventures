@@ -114,11 +114,21 @@ docker run -p 3000:3000 vihana
 - Configure WhatsApp number in Contact page
 
 ### Connect Contact Form to Google Sheets + Email
-1. Create a Google Apps Script web app that accepts POST requests.
-2. In the script, write the submitted fields to a Google Sheet and send an email to info@vihanaglobalventures.com.
-3. Deploy the script and copy the web app URL.
-4. Add it to your environment as `GOOGLE_APPS_SCRIPT_URL` in `.env.local`.
-5. Restart the Next.js dev server after updating the environment variable.
+1. Create a Google Cloud service account and download its JSON key.
+2. Share the Google Sheet with the service account email address.
+3. Set these environment variables in `.env.local` or Vercel:
+   - `GOOGLE_SHEETS_ID` — the ID of your Google Sheet
+   - `GOOGLE_SERVICE_ACCOUNT_KEY` — the full JSON key as a single line string
+   - `CONTACT_EMAIL_TO` — `info@vihanaglobalventures.com`
+   - optional SMTP settings if you want email notifications:
+     - `EMAIL_SMTP_HOST`
+     - `EMAIL_SMTP_PORT`
+     - `EMAIL_SMTP_USER`
+     - `EMAIL_SMTP_PASS`
+     - `EMAIL_FROM`
+4. Redeploy the application so the server route can read the new variables.
+
+This setup keeps your sheet private because the website uses a service account to write data directly, and the sheet is not shared publicly.
 
 ### 3D Graphics
 - Modify `CargoShip3D.tsx` for ship customization
