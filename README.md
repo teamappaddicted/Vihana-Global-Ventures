@@ -113,6 +113,13 @@ docker run -p 3000:3000 vihana
 - Update testimonials and case studies
 - Configure WhatsApp number in Contact page
 
+### Connect Contact Form to Google Sheets + Email
+1. Create a Google Apps Script web app that accepts POST requests.
+2. In the script, write the submitted fields to a Google Sheet and send an email to info@vihanaglobalventures.com.
+3. Deploy the script and copy the web app URL.
+4. Add it to your environment as `GOOGLE_APPS_SCRIPT_URL` in `.env.local`.
+5. Restart the Next.js dev server after updating the environment variable.
+
 ### 3D Graphics
 - Modify `CargoShip3D.tsx` for ship customization
 - Edit `AnimatedGlobe3D.tsx` for globe styling

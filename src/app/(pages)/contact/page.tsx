@@ -4,30 +4,56 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 
+const initialFormData = {
+  name: '',
+  email: '',
+  phone: '',
+  company: '',
+  subject: '',
+  message: '',
+};
+
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    subject: '',
-    message: '',
-  });
-  const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+  const [statusType, setStatusType] = useState<'success' | 'error' | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, send this to your backend
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: '', email: '', phone: '', company: '', subject: '', message: '' });
-      setSubmitted(false);
-    }, 3000);
+    setIsSubmitting(true);
+    setStatusMessage(null);
+    setStatusType(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Unable to send your message right now.');
+      }
+
+      setFormData(initialFormData);
+      setStatusType('success');
+      setStatusMessage('Thank you! Your message has been sent successfully.');
+    } catch (error) {
+      console.error('Contact form submission failed:', error);
+      setStatusType('error');
+      setStatusMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -214,19 +240,20 @@ export default function ContactPage() {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-3 bg-gradient-to-r from-[#214156] to-[#2d5a73] text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                  className="w-full py-3 bg-gradient-to-r from-[#214156] to-[#2d5a73] text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   <Send size={20} />
-                  {submitted ? 'Message Sent!' : 'Send Message'}
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </motion.button>
 
-                {submitted && (
+                {statusMessage && (
                   <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="text-center text-green-600 font-semibold"
+                    className={`text-center font-semibold ${statusType === 'success' ? 'text-green-600' : 'text-red-600'}`}
                   >
-                    Thank you! We'll get back to you soon.
+                    {statusMessage}
                   </motion.p>
                 )}
               </form>
